@@ -3,7 +3,7 @@ class Despesa{
 		this.ano = ano
 		this.mes = mes
 		this.dia = dia
-		this.tipo = dia
+		this.tipo = tipo
 		this.descricao = descricao
 		this.valor = valor
 	}
@@ -39,6 +39,26 @@ class Bd{
 		localStorage.setItem(id, JSON.stringify(d))
 
 		localStorage.setItem('id', id)
+	}
+
+	recuperarTodosRegistros(){
+		//array de despesas
+		let despesas = Array()
+
+		let id = localStorage.getItem('id')
+
+		//recuperar todas as despesas cadastradas em localStorage
+		for(let i = 1; i<= id; i++){
+			let despesa = JSON.parse(localStorage.getItem(i))
+
+			//existe a possibilidades de ter itens que foram removidos??
+			if(despesa === null){
+				continue
+			}
+
+			despesas.push(despesa)
+		}
+			return despesas
 	}
 }
 
@@ -84,6 +104,63 @@ function cadastrarDespesa() {
 
 		$('#modalRegistraDespesa').modal('show')
 	}
+}
+
+
+
+
+
+
+function carregaListaDespesas(){
+	//Aqui criamos uma variavel chamada despesas que recebe as informações que vem da função
+	let despesas = Array()
+
+	despesas = bd.recuperarTodosRegistros()
+
+	console.log(despesas)
+
+	//selecionando o elemento Tbody da tabela
+	var listaDespesas = document.getElementById('listaDespesas')
+
+	/*
+	<tr>
+                <td>15/03/2018</td>
+                <td>Alimentação</td>
+                <td>Compras</td>
+                <td>500</td>
+              </tr>
+	*/
+
+
+	//percorrer o Array() despesas, listando cada despesa de forma dinamica
+	despesas.forEach(function(d){
+
+		console.log(d)
+
+		//criando as linhas <tr>
+		let linha = listaDespesas.insertRow()
+
+		//cria as colunas <td>
+		linha.insertCell(0).innerHTML = `${d.dia}/${d.mes}/${d.ano}`
+
+		//ajustar o tipo
+		switch(d.tipo){
+			case '1': d.tipo = 'Alimentação'
+				break
+			case '2': d.tipo = 'Educação'
+				break
+			case '3': d.tipo = 'Lazer'
+				break
+			case '4': d.tipo = 'Saúde'
+				break
+			case '5': d.tipo = 'Transporte'
+				break
+		}
+		linha.insertCell(1).innerHTML = d.tipo
+		
+		linha.insertCell(2).innerHTML = d.descricao
+		linha.insertCell(3).innerHTML = d.valor
+	})
 }
 
 	

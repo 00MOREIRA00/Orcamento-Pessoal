@@ -10,16 +10,22 @@
 <img src = "https://user-images.githubusercontent.com/85044936/174335071-b31d1039-c155-49a3-a7c3-27d139495b62.gif"/>
 </div>
 
+<br>
+<h1>Armazenamento</h1>
+<p>Os dados serão armazenados em localStorage, então mesmo fechando o navegador e reiniciando a maquina os dados continuarão armazenados no navegador.</p>
 <div align="center">
 <img src = "https://user-images.githubusercontent.com/85044936/174335094-ded55643-82db-4049-bf49-96fa3769ec8f.gif"/>
 </div>
 
-
+<br>
+<h1>Busca</h1>
+<p>Os dados são armazenados em Arrays e foi criado uma lógica para que possamos buscá-los com referencia nos dados inseridos.</p>
 <div align="center">
 <img src = "https://user-images.githubusercontent.com/85044936/174335103-4f04491d-ed00-4ef1-951f-9077477d5864.gif"/>
 </div>
 
-  
+<br>
+<p>Esse projeto foi desenvolvido como uma forma de treinamento através de um curso localizado na Udemy</p>
 
 
 

@@ -2,10 +2,23 @@
 <p>O projeto Orçamento pessoal nada mais é do que uma Aplicação Web destinada a criação de uma lista de despesas separada por ano, mês, e naturalidade do gasto. A aplicação por si só é bem dinâmica e de uso intuitivo e foi criada para o treinamento do meu estudo de JavaScript, pois foi tido como um desafio a criação das lógicas e o salvamento das informações em localStorage</p>
 
 
+<div align="center">
+<img src = "https://user-images.githubusercontent.com/85044936/174335071-b31d1039-c155-49a3-a7c3-27d139495b62.gif"/>
+</div>
 
-![Inclusao](https://user-images.githubusercontent.com/85044936/174335071-b31d1039-c155-49a3-a7c3-27d139495b62.gif)
-![LocalStorage](https://user-images.githubusercontent.com/85044936/174335094-ded55643-82db-4049-bf49-96fa3769ec8f.gif)
-![Pesquisa](https://user-images.githubusercontent.com/85044936/174335103-4f04491d-ed00-4ef1-951f-9077477d5864.gif)
+<div align="center">
+<img src = "https://user-images.githubusercontent.com/85044936/174335094-ded55643-82db-4049-bf49-96fa3769ec8f.gif"/>
+</div>
+
+
+<div align="center">
+<img src = "https://user-images.githubusercontent.com/85044936/174335103-4f04491d-ed00-4ef1-951f-9077477d5864.gif"/>
+</div>
+
+  
+
+
+
 
 
 <!--Inserindo botons de linguagens-->

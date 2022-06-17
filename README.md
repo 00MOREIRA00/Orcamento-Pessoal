@@ -3,6 +3,9 @@
 
 
 
+![Inclusao](https://user-images.githubusercontent.com/85044936/174335071-b31d1039-c155-49a3-a7c3-27d139495b62.gif)
+![LocalStorage](https://user-images.githubusercontent.com/85044936/174335094-ded55643-82db-4049-bf49-96fa3769ec8f.gif)
+![Pesquisa](https://user-images.githubusercontent.com/85044936/174335103-4f04491d-ed00-4ef1-951f-9077477d5864.gif)
 
 
 <!--Inserindo botons de linguagens-->
